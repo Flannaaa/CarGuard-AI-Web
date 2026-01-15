@@ -1,0 +1,26 @@
+<annotation>
+	<folder>detection_results</folder>
+	<filename>20251116_163713_VCF2025_detected.jpg</filename>
+	<path>C:\Users\Flanna\Downloads\license_plate_recogniton_system-main\detection_results\20251116_163713_VCF2025_detected.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>800</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>license_plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>223</xmin>
+			<ymin>465</ymin>
+			<xmax>382</xmax>
+			<ymax>515</ymax>
+		</bndbox>
+	</object>
+</annotation>

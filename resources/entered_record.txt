@@ -1,0 +1,493 @@
+[2025-11-16 14:51:05] Detected Plate: PEN15
+Image: resources/image/output/yolo/detection_20251116_145105.jpg
+------------------------------------------------------------
+[2025-11-16 14:54:12] Detected Plate: MAFI4
+Image: resources/image/output/yolo/detection_20251116_145412.jpg
+------------------------------------------------------------
+[2025-11-16 16:11:54] Detected Plate: PLA4BOH
+Image: resources/image/output/yolo/detection_20251116_161154.jpg
+------------------------------------------------------------
+[2025-11-16 16:37:14] Detected Plate: VCF2025
+Image: resources/image/output/yolo/detection_20251116_163714.jpg
+------------------------------------------------------------
+2025-11-16 16:37:14 - YOLO - Plate: VCF2025 - Original: detection_results/20251116_163713_VCF2025_original.jpg - Detected: detection_results/20251116_163713_VCF2025_detected.jpg
+[2025-11-17 01:31:45] Detected Plate: VCF2025
+Image: resources/image/output/yolo/detection_20251117_013145.jpg
+------------------------------------------------------------
+2025-11-17 01:31:45 - YOLO - Plate: VCF2025 - Original: detection_results/20251117_013144_VCF2025_original.jpg - Detected: detection_results/20251117_013144_VCF2025_detected.jpg
+[2025-11-17 17:00:10] Detected Plate: PEN15
+Image: resources/image/output/yolo/detection_20251117_170010.jpg
+------------------------------------------------------------
+2025-11-17 17:00:10 - YOLO - Plate: PEN15 - Original: detection_results/20251117_170009_PEN15_original.jpg - Detected: detection_results/20251117_170009_PEN15_detected.jpg
+[2025-11-20 00:51:05] Detected Plate: PEN15
+Image: resources/image/output/yolo/detection_20251120_005105.jpg
+------------------------------------------------------------
+2025-11-20 00:51:05 - YOLO - Plate: PEN15 - Original: detection_results/20251120_005104_PEN15_original.jpg - Detected: detection_results/20251120_005104_PEN15_detected.jpg
+[2025-11-20 11:22:56] Detected Plate: VCF2025
+Image: resources/image/output/yolo/detection_20251120_112256.jpg
+------------------------------------------------------------
+2025-11-20 11:22:56 - YOLO - Plate: VCF2025 - Original: detection_results/20251120_112255_VCF2025_original_YOLO.jpg - Detected: detection_results/20251120_112255_VCF2025_detected_YOLO.jpg
+[2025-11-20 11:47:06] Detected Plate: PEN15
+Image: resources/image/output/yolo/detection_20251120_114706.jpg
+------------------------------------------------------------
+2025-11-20 11:47:06 - YOLO - Plate: PEN15 - Original: detection_results/20251120_114706_PEN15_original_YOLO.jpg - Detected: detection_results/20251120_114706_PEN15_detected_YOLO.jpg
+[2025-11-20 11:47:15] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251120_114715.jpg
+------------------------------------------------------------
+2025-11-20 11:47:15 - YOLO - Plate: AKD9879 - Original: detection_results/20251120_114715_AKD9879_original_YOLO.jpg - Detected: detection_results/20251120_114715_AKD9879_detected_YOLO.jpg
+[2025-11-20 11:47:41] Detected Plate: 
+Image: resources/image/output/yolo/detection_20251120_114741.jpg
+------------------------------------------------------------
+2025-11-20 11:47:41 - YOLO - Plate:  - Original: detection_results/20251120_114741__original_YOLO.jpg - Detected: detection_results/20251120_114741__detected_YOLO.jpg
+12:24:10 - Live Detection - Plate: AKD9872
+12:24:46 - Live Detection - Plate: AKD9878
+12:25:45 - Live Detection - Plate: AKD9879
+12:27:00 - Live Detection - Plate: VAT6430
+[2025-11-20 12:27:39] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251120_122739.jpg
+------------------------------------------------------------
+2025-11-20 12:27:39 - YOLO - Plate: AKD9879 - Original: detection_results/20251120_122739_AKD9879_original_YOLO.jpg - Detected: detection_results/20251120_122739_AKD9879_detected_YOLO.jpg
+[2025-11-21 00:20:19] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251121_002019.jpg
+------------------------------------------------------------
+2025-11-21 00:20:19 - YOLO - Plate: AKD9879 - Original: detection_results/20251121_002018_AKD9879_original_YOLO.jpg - Detected: detection_results/20251121_002018_AKD9879_detected_YOLO.jpg
+[2025-11-21 01:13:09] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251121_011309.jpg
+------------------------------------------------------------
+2025-11-21 01:13:09 - YOLO - Plate: AKD9879 - Original: detection_results/20251121_011308_AKD9879_original_YOLO.jpg - Detected: detection_results/20251121_011308_AKD9879_detected_YOLO.jpg
+[2025-11-21 21:09:27] Detected Plate: PEN15
+Image: resources/image/output/yolo/detection_20251121_210927.jpg
+------------------------------------------------------------
+2025-11-21 21:09:27.861926 - YOLO - Plate: PEN15 - Original: C:/Users/Flanna/Downloads/JPJ-Malaysia-Cool-NUmber-Plates-2.jpg - Detected: resources/image/output/yolo/detection_20251121_210927.jpg
+[2025-11-21 21:21:30] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251121_212130.jpg
+------------------------------------------------------------
+2025-11-21 21:21 - Photo - Plate: AKD9879
+[2025-11-21 21:31:30] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20251121_213130.jpg
+------------------------------------------------------------
+2025-11-21 21:31 - Photo - Plate: KEE1096 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/resources/image/test/photo3.jpg - Detected: resources/image/output/yolo/detection_20251121_213130.jpg
+[2025-11-21 22:11:24] Detected Plate: VBR3957
+Image: resources/image/output/yolo/detection_20251121_221124.jpg
+------------------------------------------------------------
+2025-11-21 22:11 - Photo - Plate: VBR3957 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/resources/image/test/photo5.jpg - Detected: resources/image/output/yolo/detection_20251121_221124.jpg
+[2025-11-21 22:11:33] Detected Plate: 
+Image: resources/image/output/yolo/detection_20251121_221133.jpg
+------------------------------------------------------------
+2025-11-21 22:11 - Photo - Plate:  - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/resources/image/test/photo8.jpg - Detected: resources/image/output/yolo/detection_20251121_221133.jpg
+[2025-11-21 22:11:37] Detected Plate: JRC5492
+Image: resources/image/output/yolo/detection_20251121_221137.jpg
+------------------------------------------------------------
+2025-11-21 22:11 - Photo - Plate: JRC5492 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/resources/image/test/photo10.jpg - Detected: resources/image/output/yolo/detection_20251121_221137.jpg
+[2025-11-21 22:21:03] Detected Plate: VBP3477
+Image: resources/image/output/yolo/detection_20251121_222103.jpg
+------------------------------------------------------------
+2025-11-21 22:21 - Photo - Plate: VBP3477 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/resources/image/test/photo6.jpg - Detected: resources/image/output/yolo/detection_20251121_222103.jpg
+[2025-11-21 22:21:20] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251121_222120.jpg
+------------------------------------------------------------
+2025-11-21 22:21 - Photo - Plate: AKD9879 - Original: C:/Users/Flanna/Downloads/eb8d5d86-3059-4ec9-9b83-e61806eff632.jpg - Detected: resources/image/output/yolo/detection_20251121_222120.jpg
+2025-11-22 01:15 - LIVE - Plate: AKD9872
+2025-11-22 01:16 - LIVE - Plate: VAI6430
+2025-11-22 01:16 - LIVE - Plate: VAT6430
+[2025-11-22 03:29:06] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251122_032906.jpg
+------------------------------------------------------------
+2025-11-22 03:29:09.273288 - Photo - Plate: AKD9879 - Detected: C:/Users/Flanna/Downloads/eb8d5d86-3059-4ec9-9b83-e61806eff632.jpg
+[2025-11-22 14:58:19] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251122_145819.jpg
+------------------------------------------------------------
+2025-11-22 14:58:19.759462 - YOLO Photo - Plate: AKD9879 - Original: C:/Users/Flanna/Downloads/eb8d5d86-3059-4ec9-9b83-e61806eff632.jpg - Detected: resources/image/output/yolo/detection_20251122_145819.jpg
+[2025-11-22 15:23:12] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251122_152312.jpg
+------------------------------------------------------------
+2025-11-22 15:23:12.607082 - YOLO Photo - Plate: AKD9879 - Original: C:/Users/Flanna/Downloads/eb8d5d86-3059-4ec9-9b83-e61806eff632.jpg - Detected: resources/image/output/yolo/detection_20251122_152312.jpg
+[2025-11-22 16:08:32] Detected Plate: PEN15
+Image: resources/image/output/yolo/detection_20251122_160832.jpg
+------------------------------------------------------------
+2025-11-22 16:08:32.349884 - YOLO Photo - Plate: PEN15 - Original: C:/Users/Flanna/Downloads/JPJ-Malaysia-Cool-NUmber-Plates-2.jpg - Detected: resources/image/output/yolo/detection_20251122_160832.jpg
+2025-11-22 16:09:11.539780 - LIVE - Plate: AKD9872
+2025-11-22 16:09:11.560098 - LIVE - Plate: VAI6430
+2025-11-22 16:09:11.580349 - LIVE - Plate: VAT6430
+2025-11-22 16:09:30.708220 - LIVE - Plate: AKD9872
+2025-11-22 16:09:31.720082 - LIVE - Plate: AKD9872
+2025-11-22 16:09:38.769693 - LIVE - Plate: AKD9872
+2025-11-22 16:09:53.897187 - LIVE - Plate: AKD9872
+2025-11-22 16:10:52.388553 - LIVE - Plate: AKD9872
+2025-11-22 16:10:55.410288 - LIVE - Plate: AKD9872
+[2025-11-22 18:02:58] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20251122_180258.jpg
+------------------------------------------------------------
+2025-11-22 18:02:58.907026 - Photo - Plate: AKD9879 - Original: C:/Users/Flanna/Downloads/eb8d5d86-3059-4ec9-9b83-e61806eff632.jpg - Detected: resources/image/output/yolo/detection_20251122_180258.jpg
+[2025-11-22 18:04:45] Detected Plate: PLA4BOH
+Image: resources/image/output/yolo/detection_20251122_180445.jpg
+------------------------------------------------------------
+2025-11-22 18:04:45.529263 - Photo - Plate: PLA4BOH - Original: C:/Users/Flanna/Downloads/fyp/images/fancy02.jpg - Detected: resources/image/output/yolo/detection_20251122_180445.jpg
+[2025-11-22 18:05:19] Detected Plate: MAFI4
+Image: resources/image/output/yolo/detection_20251122_180519.jpg
+------------------------------------------------------------
+2025-11-22 18:05:19.831259 - Photo - Plate: MAFI4 - Original: C:/Users/Flanna/Downloads/JPJ-Malaysia-Cool-NUmber-Plates-3 (1).jpg - Detected: resources/image/output/yolo/detection_20251122_180519.jpg
+[2025-11-22 18:06:05] Detected Plate: 
+Image: resources/image/output/yolo/detection_20251122_180605.jpg
+------------------------------------------------------------
+2025-11-22 18:06:05.505602 - Photo - Plate:  - Original: C:/Users/Flanna/Downloads/fyp/images/4b0f4bd3-659f-4c2e-bddd-79a0e1abc261_jpg.rf.916f1dd65350aae358a9b435e192e6f3.jpg - Detected: resources/image/output/yolo/detection_20251122_180605.jpg
+[2025-11-22 18:06:12] Detected Plate: VMD2900
+Image: resources/image/output/yolo/detection_20251122_180612.jpg
+------------------------------------------------------------
+2025-11-22 18:06:12.597737 - Photo - Plate: VMD2900 - Original: C:/Users/Flanna/Downloads/fyp/images/WhatsApp Image 2025-06-05 at 15.26.26.jpeg - Detected: resources/image/output/yolo/detection_20251122_180612.jpg
+[2025-11-22 18:06:45] Detected Plate: VAUTEN2
+Image: resources/image/output/yolo/detection_20251122_180645.jpg
+------------------------------------------------------------
+2025-11-22 18:06:45.923561 - Photo - Plate: VAUTEN2 - Original: C:/Users/Flanna/Downloads/fyp/images/BLUR CARPLATE.jpg - Detected: resources/image/output/yolo/detection_20251122_180645.jpg
+[2025-11-22 18:07:04] Detected Plate: VBR2625
+Image: resources/image/output/yolo/detection_20251122_180704.jpg
+------------------------------------------------------------
+2025-11-22 18:07:04.267110 - Photo - Plate: VBR2625 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo2.jpg - Detected: resources/image/output/yolo/detection_20251122_180704.jpg
+[2025-11-22 18:07:11] Detected Plate: VBP3477
+Image: resources/image/output/yolo/detection_20251122_180711.jpg
+------------------------------------------------------------
+2025-11-22 18:07:11.490180 - Photo - Plate: VBP3477 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo6.jpg - Detected: resources/image/output/yolo/detection_20251122_180711.jpg
+[2025-12-08 23:11:13] Detected Plate: VBR3957
+Image: resources/image/output/yolo/detection_20251208_231113.jpg
+------------------------------------------------------------
+2025-12-08 23:11:13.783279 - Photo - Plate: VBR3957 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo5.jpg - Detected: resources/image/output/yolo/detection_20251208_231113.jpg
+[2025-12-09 11:03:50] Detected Plate: 
+Image: resources/image/output/yolo/detection_20251209_110350.jpg
+------------------------------------------------------------
+2025-12-09 11:03:50.725873 - Photo - Plate:  - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo8.jpg - Detected: resources/image/output/yolo/detection_20251209_110350.jpg
+[2025-12-09 11:03:58] Detected Plate: VBM6529
+Image: resources/image/output/yolo/detection_20251209_110358.jpg
+------------------------------------------------------------
+2025-12-09 11:03:58.097668 - Photo - Plate: VBM6529 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo4.jpg - Detected: resources/image/output/yolo/detection_20251209_110358.jpg
+[2025-12-09 11:04:26] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20251209_110426.jpg
+------------------------------------------------------------
+2025-12-09 11:04:26.782346 - Photo - Plate: KEE1096 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo3.jpg - Detected: resources/image/output/yolo/detection_20251209_110426.jpg
+[2025-12-09 11:05:03] Detected Plate: VBR2625
+Image: resources/image/output/yolo/detection_20251209_110503.jpg
+------------------------------------------------------------
+2025-12-09 11:05:03.697739 - Photo - Plate: VBR2625 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo2.jpg - Detected: resources/image/output/yolo/detection_20251209_110503.jpg
+[2025-12-09 11:05:21] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20251209_110521.jpg
+------------------------------------------------------------
+2025-12-09 11:05:21.389280 - Photo - Plate: KEE1096 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo3.jpg - Detected: resources/image/output/yolo/detection_20251209_110521.jpg
+[2025-12-09 11:05:38] Detected Plate: 
+Image: resources/image/output/yolo/detection_20251209_110538.jpg
+------------------------------------------------------------
+2025-12-09 11:05:38.152244 - Photo - Plate:  - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo8.jpg - Detected: resources/image/output/yolo/detection_20251209_110538.jpg
+[2025-12-09 11:05:49] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20251209_110549.jpg
+------------------------------------------------------------
+2025-12-09 11:05:49.210988 - Photo - Plate: KEE1096 - Original: C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo3.jpg - Detected: resources/image/output/yolo/detection_20251209_110549.jpg
+[2025-12-14 00:59:03] Detected Plate: VBR3957
+Image: resources/image/output/yolo/detection_20251214_005903.jpg
+------------------------------------------------------------
+[2025-12-14 00:59:09] Detected Plate: WC5763R
+Image: resources/image/output/yolo/detection_20251214_005909.jpg
+------------------------------------------------------------
+[2025-12-14 01:21:12] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20251214_012112.jpg
+------------------------------------------------------------
+2025-12-14 01:21:12.919117 | USER:User9 | Photo | Plate:KEE1096 | Orig:C:/Users/Flanna/Downloads/license_plate_recogniton_system-main/dataset/images/val/photo3.jpg | Det:resources/image/output/yolo/detection_20251214_012112.jpg
+[2025-12-14 14:12:47] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20251214_141247.jpg
+------------------------------------------------------------
+[2025-12-14 14:28:34] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20251214_142834.jpg
+------------------------------------------------------------
+[2025-12-15 20:28:29] Detected Plate: VBP3477
+Image: resources/image/output/yolo/detection_20251215_202829.jpg
+------------------------------------------------------------
+[2025-12-16 02:38:51] Detected Plate: WC5763R
+Image: resources/image/output/yolo/detection_20251216_023851.jpg
+------------------------------------------------------------
+[2025-12-16 15:34:00] Detected Plate: WC5763R
+Image: resources/image/output/yolo/detection_20251216_153400.jpg
+------------------------------------------------------------
+[2025-12-16 17:19:35] Detected Plate: VBR3957
+Image: resources/image/output/yolo/detection_20251216_171935.jpg
+------------------------------------------------------------
+[2025-12-16 17:19:46] Detected Plate: JRC5492
+Image: resources/image/output/yolo/detection_20251216_171946.jpg
+------------------------------------------------------------
+[2025-12-16 17:20:45] Detected Plate: WC5763R
+Image: resources/image/output/yolo/detection_20251216_172045.jpg
+------------------------------------------------------------
+[2025-12-17 03:23:39] Detected Plate: WC5763R
+Image: resources/image/output/yolo/detection_20251217_032339.jpg
+------------------------------------------------------------
+[2025-12-17 03:24:39] Detected Plate: WC5763R
+Image: resources/image/output/yolo/detection_20251217_032439.jpg
+------------------------------------------------------------
+2025-12-17 04:23:08.164700 - LIVE - Plate: VAT6430
+2025-12-17 04:25:57.919862 - LIVE - Plate: AKD9878
+[2025-12-17 21:06:23] Detected Plate: SAB41633C
+Image: resources/image/output/yolo/detection_20251217_210623.jpg
+------------------------------------------------------------
+[2025-12-17 21:06:39] Detected Plate: VL4590
+Image: resources/image/output/yolo/detection_20251217_210639.jpg
+------------------------------------------------------------
+[2025-12-17 21:07:04] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20251217_210704.jpg
+------------------------------------------------------------
+[2025-12-20 04:19:07] Detected Plate: VBR3957
+Image: resources/image/output/yolo/detection_20251220_041907.jpg
+------------------------------------------------------------
+[2025-12-20 04:23:21] Detected Plate: VBP3477
+Image: resources/image/output/yolo/detection_20251220_042321.jpg
+------------------------------------------------------------
+[2025-12-20 04:27:05] Detected Plate: WC5763R
+Image: resources/image/output/yolo/detection_20251220_042705.jpg
+------------------------------------------------------------
+[2025-12-20 04:29:06] Detected Plate: VBR3957
+Image: resources/image/output/yolo/detection_20251220_042906.jpg
+------------------------------------------------------------
+[2025-12-20 04:29:18] Detected Plate: 
+Image: resources/image/output/yolo/detection_20251220_042918.jpg
+------------------------------------------------------------
+[2025-12-20 04:29:24] Detected Plate: VL4590
+Image: resources/image/output/yolo/detection_20251220_042924.jpg
+------------------------------------------------------------
+[2025-12-21 14:39:41] Detected Plate: MOS
+Image: resources/image/output/yolo/detection_20251221_143941.jpg
+------------------------------------------------------------
+[2025-12-21 14:40:08] Detected Plate: WXF5085
+Image: resources/image/output/yolo/detection_20251221_144008.jpg
+------------------------------------------------------------
+[2025-12-21 16:47:20] Detected Plate: BAMBEE223
+Image: resources/image/output/yolo/detection_20251221_164720.jpg
+------------------------------------------------------------
+[2025-12-21 17:20:10] Detected Plate: VFY
+Image: resources/image/output/yolo/detection_20251221_172010.jpg
+------------------------------------------------------------
+[2025-12-21 17:20:53] Detected Plate: WXF5085
+Image: resources/image/output/yolo/detection_20251221_172053.jpg
+------------------------------------------------------------
+[2025-12-21 17:21:13] Detected Plate: WHD278
+Image: resources/image/output/yolo/detection_20251221_172113.jpg
+------------------------------------------------------------
+[2025-12-21 17:21:50] Detected Plate: MOS
+Image: resources/image/output/yolo/detection_20251221_172150.jpg
+------------------------------------------------------------
+[2025-12-21 17:23:12] Detected Plate: BAMBEE223
+Image: resources/image/output/yolo/detection_20251221_172312.jpg
+------------------------------------------------------------
+[2025-12-21 17:56:53] Detected Plate: MOS
+Image: resources/image/output/yolo/detection_20251221_175653.jpg
+------------------------------------------------------------
+[2025-12-21 17:57:24] Detected Plate: WXF5085
+Image: resources/image/output/yolo/detection_20251221_175724.jpg
+------------------------------------------------------------
+[2026-01-07 10:32:26] Detected Plate: WXF5085
+Image: resources/image/output/yolo/detection_20260107_103226.jpg
+------------------------------------------------------------
+[2026-01-07 10:32:42] Detected Plate: MOS
+Image: resources/image/output/yolo/detection_20260107_103242.jpg
+------------------------------------------------------------
+[2026-01-10 16:51:38] Detected Plate: OLF4429
+Image: resources/image/output/yolo/detection_20260110_165138.jpg
+------------------------------------------------------------
+[2026-01-10 16:54:44] Detected Plate: MOS
+Image: resources/image/output/yolo/detection_20260110_165444.jpg
+------------------------------------------------------------
+[2026-01-10 16:54:52] Detected Plate: 
+Image: resources/image/output/yolo/detection_20260110_165452.jpg
+------------------------------------------------------------
+[2026-01-10 16:55:16] Detected Plate: MOS
+Image: resources/image/output/yolo/detection_20260110_165516.jpg
+------------------------------------------------------------
+[2026-01-10 16:58:19] Detected Plate: OLF4429
+Image: resources/image/output/yolo/detection_20260110_165819.jpg
+------------------------------------------------------------
+[2026-01-10 16:59:07] Detected Plate: VBM6529
+Image: resources/image/output/yolo/detection_20260110_165907.jpg
+------------------------------------------------------------
+[2026-01-10 16:59:33] Detected Plate: VBM6529
+Image: resources/image/output/yolo/detection_20260110_165933.jpg
+------------------------------------------------------------
+[2026-01-10 16:59:39] Detected Plate: MAFI4
+Image: resources/image/output/yolo/detection_20260110_165939.jpg
+------------------------------------------------------------
+[2026-01-10 17:00:12] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20260110_170012.jpg
+------------------------------------------------------------
+[2026-01-11 02:12:40] Detected Plate: MAFI4
+Image: resources/image/output/yolo/detection_20260111_021240.jpg
+------------------------------------------------------------
+[2026-01-11 02:13:26] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20260111_021326.jpg
+------------------------------------------------------------
+[2026-01-11 02:13:34] Detected Plate: OLF4429
+Image: resources/image/output/yolo/detection_20260111_021334.jpg
+------------------------------------------------------------
+[2026-01-11 02:13:51] Detected Plate: WHD278
+Image: resources/image/output/yolo/detection_20260111_021351.jpg
+------------------------------------------------------------
+[2026-01-11 02:14:01] Detected Plate: MOS
+Image: resources/image/output/yolo/detection_20260111_021401.jpg
+------------------------------------------------------------
+[2026-01-11 02:14:10] Detected Plate: WXF5085
+Image: resources/image/output/yolo/detection_20260111_021410.jpg
+------------------------------------------------------------
+[2026-01-11 02:14:20] Detected Plate: VBM6529
+Image: resources/image/output/yolo/detection_20260111_021420.jpg
+------------------------------------------------------------
+[2026-01-12 10:08:12] Detected Plate: VFY
+Image: resources/image/output/yolo/detection_20260112_100812.jpg
+------------------------------------------------------------
+[2026-01-12 10:08:32] Detected Plate: BAMBEE223
+Image: resources/image/output/yolo/detection_20260112_100832.jpg
+------------------------------------------------------------
+[2026-01-12 10:17:46] Detected Plate: WXF5085
+Image: resources/image/output/yolo/detection_20260112_101746.jpg
+------------------------------------------------------------
+[2026-01-12 11:44:10] Detected Plate: VFY
+Image: resources/image/output/yolo/detection_20260112_114410.jpg
+------------------------------------------------------------
+[2026-01-12 11:44:33] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20260112_114433.jpg
+------------------------------------------------------------
+[2026-01-12 17:04:42] Detected Plate: VBM6529
+Image: resources/image/output/yolo/detection_20260112_170442.jpg
+------------------------------------------------------------
+[2026-01-15 01:42:05] Detected Plate: SEKSY4NZ
+Image: resources/image/output/yolo/detection_20260115_014205.jpg
+------------------------------------------------------------
+[2026-01-15 01:43:23] Detected Plate: BLESS30
+Image: resources/image/output/yolo/detection_20260115_014323.jpg
+------------------------------------------------------------
+[2026-01-15 01:43:43] Detected Plate: MAFI4
+Image: resources/image/output/yolo/detection_20260115_014343.jpg
+------------------------------------------------------------
+[2026-01-15 01:44:13] Detected Plate: SMSBOS
+Image: resources/image/output/yolo/detection_20260115_014413.jpg
+------------------------------------------------------------
+[2026-01-15 01:44:40] Detected Plate: MAH41
+Image: resources/image/output/yolo/detection_20260115_014440.jpg
+------------------------------------------------------------
+[2026-01-15 01:45:14] Detected Plate: RABBO
+Image: resources/image/output/yolo/detection_20260115_014514.jpg
+------------------------------------------------------------
+[2026-01-15 01:45:45] Detected Plate: 
+Image: resources/image/output/yolo/detection_20260115_014545.jpg
+------------------------------------------------------------
+[2026-01-15 01:46:12] Detected Plate: VGT8555
+Image: resources/image/output/yolo/detection_20260115_014612.jpg
+------------------------------------------------------------
+[2026-01-15 01:46:55] Detected Plate: VFL538
+Image: resources/image/output/yolo/detection_20260115_014655.jpg
+------------------------------------------------------------
+[2026-01-15 01:47:02] Detected Plate: ALR47IS
+Image: resources/image/output/yolo/detection_20260115_014702.jpg
+------------------------------------------------------------
+[2026-01-15 01:51:10] Detected Plate: VEUI888
+Image: resources/image/output/yolo/detection_20260115_015110.jpg
+------------------------------------------------------------
+[2026-01-15 01:51:23] Detected Plate: MIRA
+Image: resources/image/output/yolo/detection_20260115_015123.jpg
+------------------------------------------------------------
+[2026-01-15 01:51:48] Detected Plate: CBO3733CHIRANRANDAGEKEONMCARE
+Image: resources/image/output/yolo/detection_20260115_015148.jpg
+------------------------------------------------------------
+[2026-01-15 01:52:12] Detected Plate: CBO3733CHIRANRANDAGEKEONMCARE
+Image: resources/image/output/yolo/detection_20260115_015212.jpg
+------------------------------------------------------------
+[2026-01-15 01:52:17] Detected Plate: SA7893K
+Image: resources/image/output/yolo/detection_20260115_015217.jpg
+------------------------------------------------------------
+[2026-01-15 01:52:48] Detected Plate: RACI577TOTDILOTDA
+Image: resources/image/output/yolo/detection_20260115_015248.jpg
+------------------------------------------------------------
+[2026-01-15 01:53:10] Detected Plate: RACI577TOTDILOTDA
+Image: resources/image/output/yolo/detection_20260115_015310.jpg
+------------------------------------------------------------
+[2026-01-15 01:53:57] Detected Plate:  
+Image: resources/image/output/yolo/detection_20260115_015357.jpg
+------------------------------------------------------------
+[2026-01-15 01:54:12] Detected Plate: 
+Image: resources/image/output/yolo/detection_20260115_015412.jpg
+------------------------------------------------------------
+[2026-01-15 01:54:40] Detected Plate: CBO3733CHIRANRANDAGEKEONMCARE
+Image: resources/image/output/yolo/detection_20260115_015440.jpg
+------------------------------------------------------------
+[2026-01-15 01:55:15] Detected Plate:  
+Image: resources/image/output/yolo/detection_20260115_015515.jpg
+------------------------------------------------------------
+[2026-01-15 01:55:31] Detected Plate: 
+Image: resources/image/output/yolo/detection_20260115_015531.jpg
+------------------------------------------------------------
+[2026-01-15 01:57:46] Detected Plate: PERFECT77
+Image: resources/image/output/yolo/detection_20260115_015746.jpg
+------------------------------------------------------------
+[2026-01-15 01:57:55] Detected Plate:  
+Image: resources/image/output/yolo/detection_20260115_015755.jpg
+------------------------------------------------------------
+[2026-01-15 01:58:07] Detected Plate: P4933T
+Image: resources/image/output/yolo/detection_20260115_015807.jpg
+------------------------------------------------------------
+[2026-01-15 01:58:24] Detected Plate: PATRIOT4915
+Image: resources/image/output/yolo/detection_20260115_015824.jpg
+------------------------------------------------------------
+[2026-01-15 02:00:18] Detected Plate: NBOSIA
+Image: resources/image/output/yolo/detection_20260115_020018.jpg
+------------------------------------------------------------
+[2026-01-15 02:00:49] Detected Plate: PATRIOT4915
+Image: resources/image/output/yolo/detection_20260115_020049.jpg
+------------------------------------------------------------
+[2026-01-15 02:05:37] Detected Plate: BAMBEE223
+Image: resources/image/output/yolo/detection_20260115_020537.jpg
+------------------------------------------------------------
+[2026-01-15 02:05:42] Detected Plate:  
+Image: resources/image/output/yolo/detection_20260115_020542.jpg
+------------------------------------------------------------
+[2026-01-15 02:05:59] Detected Plate: COMEL20
+Image: resources/image/output/yolo/detection_20260115_020559.jpg
+------------------------------------------------------------
+[2026-01-15 02:06:05] Detected Plate: 
+Image: resources/image/output/yolo/detection_20260115_020605.jpg
+------------------------------------------------------------
+[2026-01-15 02:06:23] Detected Plate: PATRIOT4915
+Image: resources/image/output/yolo/detection_20260115_020623.jpg
+------------------------------------------------------------
+[2026-01-15 02:06:28] Detected Plate: RACI577TOTDILOTDA
+Image: resources/image/output/yolo/detection_20260115_020628.jpg
+------------------------------------------------------------
+[2026-01-15 02:08:01] Detected Plate: VBM6529
+Image: resources/image/output/yolo/detection_20260115_020801.jpg
+------------------------------------------------------------
+[2026-01-15 02:08:33] Detected Plate: SAB41633C
+Image: resources/image/output/yolo/detection_20260115_020833.jpg
+------------------------------------------------------------
+[2026-01-15 02:08:37] Detected Plate: KEE1096
+Image: resources/image/output/yolo/detection_20260115_020837.jpg
+------------------------------------------------------------
+[2026-01-15 09:59:14] Detected Plate: VBM6529
+Image: resources/image/output/yolo/detection_20260115_095914.jpg
+------------------------------------------------------------
+[2026-01-15 10:03:38] Detected Plate: PERFECT77
+Image: resources/image/output/yolo/detection_20260115_100338.jpg
+------------------------------------------------------------
+[2026-01-15 10:17:21] Detected Plate: WC5763R
+Image: resources/image/output/yolo/detection_20260115_101721.jpg
+------------------------------------------------------------
+[2026-01-15 12:08:11] Detected Plate: PERFECT77
+Image: resources/image/output/yolo/detection_20260115_120811.jpg
+------------------------------------------------------------
+[2026-01-15 12:09:47] Detected Plate: AKD9879
+Image: resources/image/output/yolo/detection_20260115_120947.jpg
+------------------------------------------------------------
+[2026-01-15 12:11:06] Detected Plate: F430VAT
+Image: resources/image/output/yolo/detection_20260115_121106.jpg
+------------------------------------------------------------
+[2026-01-15 12:13:45] Detected Plate: VCP9788
+Image: resources/image/output/yolo/detection_20260115_121345.jpg
+------------------------------------------------------------
+[2026-01-15 13:47:32] Detected Plate: PERFECT77
+Image: resources/image/output/yolo/detection_20260115_134732.jpg
+------------------------------------------------------------
+[2026-01-15 21:27:28] Detected Plate: PATRIOT4915
+Image: resources/image/output/yolo/detection_20260115_212728.jpg
+------------------------------------------------------------
+[2026-01-15 21:56:38] Detected Plate: PERFECT77
+Image: resources/image/output/yolo/detection_20260115_215638.jpg
+------------------------------------------------------------

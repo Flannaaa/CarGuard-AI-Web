@@ -1,0 +1,8 @@
+streamlit
+streamlit-lottie
+numpy
+pandas
+Pillow
+pyrebase4
+requests
+opencv-python-headless

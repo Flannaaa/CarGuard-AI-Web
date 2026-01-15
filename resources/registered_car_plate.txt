@@ -1,0 +1,36 @@
+UTM9999
+HWE3071
+WA688M
+VBR2625
+E63
+WC5763R
+CCK8826
+Plate: CCL9988
+Colour: SILVER
+Model: VIOS
+Owner: MANZIE
+--------------------------------------------------
+Car Plate: CCL5656
+Car Colour: black
+Car Model: vellfire
+Owner: anisah
+--------------------------------------------------
+Car Plate: CCL2334
+Car Colour: black
+Car Model: vios
+Owner: Manzie
+--------------------------------------------------
+Car Plate: CCL2334
+Car Colour: black
+Car Model: vios
+Owner: Manzie
+--------------------------------------------------
+Car Plate: CCL2334
+Car Colour: black
+Car Model: vios
+Owner: Manzie
+--------------------------------------------------
+CDR7845 - BLACK HONDA - Registered by User3 at 2025-11-20 00:43:15.262570
+ccd1234 - black honda - Owner: User5
+ -   - Owner: 
+CCK1234 - WHITE HONDA - Owner: User9

@@ -1,0 +1,72 @@
+{
+    "users": {
+        "User1": {
+            "password": "User01@",
+            "car_plate": "cck8826",
+            "car_color": "silver",
+            "car_model": "honda",
+            "registration_date": "2025-11-16 11:57:16"
+        },
+        "User2": {
+            "password": "User01@",
+            "car_plate": "CCK8826",
+            "car_color": "BLACK",
+            "car_model": "HONDA",
+            "registration_date": "2025-11-16 13:29:54"
+        },
+        "User3": {
+            "password": "User123@",
+            "car_plate": "CDR7845",
+            "car_color": "BLACK",
+            "car_model": "HONDA",
+            "registration_date": "2025-11-20 00:43:15"
+        },
+        "User5": {
+            "password": "User05@",
+            "car_plate": "ccd1234",
+            "car_color": "black",
+            "car_model": "honda",
+            "security_question": "Q",
+            "security_answer": "A",
+            "registration_date": "2025-12-08"
+        },
+        "": {
+            "password": "",
+            "car_plate": "",
+            "car_color": "",
+            "car_model": "",
+            "security_question": "Q",
+            "security_answer": "A",
+            "registration_date": "2025-12-09"
+        },
+        "User9": {
+            "password": "User009@",
+            "car_plate": "CCK1234",
+            "car_color": "WHITE",
+            "car_model": "HONDA",
+            "registration_date": "2025-12-14"
+        }
+    },
+    "admins": {
+        "Admin1": {
+            "password": "Admin0001@",
+            "registration_date": "2025-11-16 11:33:08"
+        },
+        "Admin2": {
+            "password": "Admin123@",
+            "registration_date": "2025-11-17 14:42:58"
+        },
+        "Admin3": {
+            "password": "Admin333@",
+            "registration_date": "2025-11-20 09:49:57"
+        },
+        "Admin4": {
+            "password": "Admin1234@",
+            "registration_date": "2025-11-22"
+        },
+        "Admin6": {
+            "password": "Admin06@",
+            "registration_date": "2025-12-09"
+        }
+    }
+}

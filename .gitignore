@@ -1,0 +1,16 @@
+.idea/.gitignore
+.idea/LicensePlateRecognitonSystem.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+__pycache__/util.cpython-310.pyc
+models/faster_rcnn/fasterRcnn.pth
+*.pyc
+resources/image/output/sdd_MobileNetV2_FpnLite/detection.jpg
+resources/image/output/detectron2/detection.jpg
+resources/image/output/yolo/detection.jpg
+Testing/video.mp4
+models/faster_rcnn/faster_rcnn.pth
+models/yolo/models/yolov8n.pt
