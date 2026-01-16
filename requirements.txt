@@ -5,3 +5,4 @@ requests
 streamlit-lottie
 pyrebase4
 Pillow
+setuptools
