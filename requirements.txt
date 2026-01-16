@@ -6,3 +6,5 @@ streamlit-lottie
 pyrebase4
 Pillow
 setuptools
+opencv-python-headless
+ultralytics
