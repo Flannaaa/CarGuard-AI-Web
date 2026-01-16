@@ -1,5 +1,7 @@
 streamlit
-numpy
 pandas
+numpy
 requests
 streamlit-lottie
+pyrebase4
+Pillow
