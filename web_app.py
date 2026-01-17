@@ -1,112 +1,81 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-import time
-import requests
 import cv2
+import numpy as np
 import os
-from streamlit_lottie import st_lottie
+import time
 from datetime import datetime
 import pyrebase
+from PIL import Image
 
 # ---------------------------------------------------------
-# 1. SETUP & CONFIGURATION
+# 1. SETUP PAGE & "CUSTOMTKINTER" THEME (CSS)
 # ---------------------------------------------------------
-st.set_page_config(page_title="CarGuard Enterprise", page_icon="🛡️", layout="wide")
+st.set_page_config(page_title="CarGuard Ultimate", page_icon="🛡️", layout="wide")
 
-# LOAD LOTTIE ANIMATION FUNCTION
-def load_lottieurl(url):
-    try:
-        r = requests.get(url)
-        if r.status_code != 200: return None
-        return r.json()
-    except: return None
-
-# PRE-LOAD ANIMATIONS
-anim_radar = load_lottieurl("https://lottie.host/5a88c308-7276-4700-917c-25e4dbf38102/10jK5sKqqV.json") # Radar
-anim_scan = load_lottieurl("https://lottie.host/9e8b9584-8d4e-41d3-bd8b-700438318359/jI8J6y8Yy3.json")  # Scanning
-anim_success = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_57TxAX.json") # Checkmark
-
-# ---------------------------------------------------------
-# 2. REAL MODEL CONNECTION
-# ---------------------------------------------------------
-try:
-    from models.yolo.yoloPhoto import yoloDetectPhoto
-    MODEL_STATUS = True
-except ImportError:
-    MODEL_STATUS = False
-    def yoloDetectPhoto(path): return ["ERR: MODEL MISSING", path]
-
-# ---------------------------------------------------------
-# 3. HIGH-CLASS CSS STYLING (THE "FANCY" PART)
-# ---------------------------------------------------------
+# This CSS mimics your 'Theme' class from main.py
 st.markdown("""
-    <style>
-    /* IMPORT FUTURISTIC FONT */
-    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap');
-    
-    /* MAIN BACKGROUND */
+<style>
+    /* 1. MAIN BACKGROUND (Theme.BG_BASE) */
     .stApp {
-        background: radial-gradient(circle at 10% 20%, rgb(15, 23, 42) 0%, rgb(0, 0, 0) 90%);
-        color: #E2E8F0;
-        font-family: 'Rajdhani', sans-serif;
+        background-color: #0B0E14;
+        color: #FFFFFF;
     }
-    
-    /* SIDEBAR */
+
+    /* 2. SIDEBAR (Theme.SIDEBAR) */
     [data-testid="stSidebar"] {
-        background-color: rgba(15, 23, 42, 0.95);
-        border-right: 1px solid rgba(148, 163, 184, 0.1);
+        background-color: #181C29;
+        border-right: 1px solid #2A2F45;
     }
-    
-    /* GLASS CARDS */
-    div.css-1r6slb0, div.stMetric {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        border-radius: 15px;
-        padding: 20px;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-    }
-    div.stMetric:hover {
-        border-color: #38BDF8; /* Neon Blue */
-        box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
-    }
-    
-    /* GLOWING BUTTONS */
-    div.stButton > button {
-        background: linear-gradient(45deg, #0EA5E9, #2563EB);
+
+    /* 3. INPUT FIELDS (SoftEntry style) */
+    .stTextInput > div > div > input {
+        background-color: #0F1116;
         color: white;
-        border: none;
-        padding: 0.6rem 2rem;
-        border-radius: 8px;
-        font-family: 'Rajdhani', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        transition: 0.3s;
-        text-transform: uppercase;
+        border: 1px solid #2A2F45;
+        border-radius: 20px; /* Corner Radius from your code */
+        padding: 10px;
+    }
+
+    /* 4. BUTTONS (BubblePillBtn style) */
+    div.stButton > button {
+        background-color: #23283D; /* GLASS_HOVER */
+        color: white;
+        border: 1px solid #2A2F45;
+        border-radius: 30px;
+        padding: 10px 25px;
+        font-weight: bold;
+        transition: all 0.3s ease;
     }
     div.stButton > button:hover {
-        box-shadow: 0 0 20px rgba(14, 165, 233, 0.6);
-        transform: scale(1.02);
+        background-color: #1DD1A1; /* BTN_SUCCESS */
+        color: black;
+        border-color: #1DD1A1;
+        box-shadow: 0 0 15px rgba(29, 209, 161, 0.5);
+    }
+
+    /* 5. METRIC CARDS (SoftGlassCard imitation) */
+    div[data-testid="metric-container"] {
+        background-color: #181C29;
+        border: 1px solid #2A2F45;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
     
-    /* HEADERS */
+    /* 6. HEADERS */
     h1, h2, h3 {
-        font-family: 'Rajdhani', sans-serif !important;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        background: -webkit-linear-gradient(#38BDF8, #818CF8);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-family: 'Segoe UI', sans-serif;
     }
-    </style>
-    """, unsafe_allow_html=True)
+</style>
+""", unsafe_allow_html=True)
 
 # ---------------------------------------------------------
-# 4. FIREBASE CONNECT
+# 2. YOUR ORIGINAL LOGIC (Unchanged)
 # ---------------------------------------------------------
+LIVE_RESULTS_FILE = "resources/live_detection_results.txt"
+if not os.path.exists("resources"): os.makedirs("resources")
+
+# FIREBASE (Your Config)
 firebase_config = {
   "apiKey": "AIzaSyDhmDa9SA0m2H73FXypOhRAvVEOTGql0ag",
   "authDomain": "carguard-ai.firebaseapp.com",
@@ -117,6 +86,7 @@ firebase_config = {
   "appId": "1:864660646308:web:b4ed7987f3124204567931",
   "measurementId": "G-RNLF7WCEZW"
 }
+
 try:
     firebase = pyrebase.initialize_app(firebase_config)
     db = firebase.database()
@@ -124,137 +94,214 @@ try:
 except:
     DB_STATUS = False
 
-# ---------------------------------------------------------
-# 5. HELPER FUNCTIONS
-# ---------------------------------------------------------
-def save_temp_file(uploaded_file):
-    if not os.path.exists("temp"): os.makedirs("temp")
-    file_path = os.path.join("temp", uploaded_file.name)
-    with open(file_path, "wb") as f:
-        f.write(uploaded_file.getbuffer())
-    return file_path
+# YOLO IMPORT
+try:
+    from yoloPhoto import yoloDetectPhoto
+    MODEL_STATUS = True
+except ImportError:
+    MODEL_STATUS = False
+    def yoloDetectPhoto(p): return ["ERR: MODEL MISSING", p]
 
 # ---------------------------------------------------------
-# 6. APP LAYOUT
+# 3. HELPER FUNCTIONS
+# ---------------------------------------------------------
+class AuthSystem:
+    @staticmethod
+    def login(username, password):
+        if not DB_STATUS: return False, "Database Offline"
+        try:
+            all_users = db.child("users").get().val()
+            if not all_users: return False, "No users found."
+            for uid, user_data in all_users.items():
+                if str(user_data.get("username")) == str(username) and str(user_data.get("password")) == str(password):
+                    return True, user_data.get("role", "user")
+            return False, "Invalid Credentials"
+        except Exception as e: return False, str(e)
+
+    @staticmethod
+    def register(username, password, email, plate):
+        if not DB_STATUS: return False, "Offline"
+        data = {"username": username, "password": password, "email": email, "car_plate": plate, "role": "user", "created_at": str(datetime.now())}
+        db.child("users").push(data)
+        return True, "Success"
+
+# ---------------------------------------------------------
+# 4. APP STATE
+# ---------------------------------------------------------
+if 'logged_in' not in st.session_state: st.session_state.logged_in = False
+if 'user' not in st.session_state: st.session_state.user = None
+if 'role' not in st.session_state: st.session_state.role = None
+
+# ---------------------------------------------------------
+# 5. UI FLOW
 # ---------------------------------------------------------
 
-# SIDEBAR
-with st.sidebar:
-    st.title("🛡️ CARGUARD")
-    st.caption("INTELLIGENT SURVEILLANCE")
-    
-    st.markdown("---")
-    menu = st.radio("SYSTEM MODULES", ["Mission Control", "Field Scanner", "Evidence Archive"])
-    st.markdown("---")
-    
-    if MODEL_STATUS:
-        st.success("● NEURAL ENGINE: ONLINE")
-    else:
-        st.error("● NEURAL ENGINE: OFFLINE")
-        
-    st.info(f"User: Commander | ID: 8821")
-
-# === MISSION CONTROL (DASHBOARD) ===
-if menu == "Mission Control":
-    c1, c2 = st.columns([2, 1])
-    with c1:
-        st.title("MISSION CONTROL")
-        st.markdown("**STATUS:** ALL SYSTEMS NOMINAL")
+# === LOGIN SCREEN ===
+if not st.session_state.logged_in:
+    c1, c2, c3 = st.columns([1, 2, 1])
     with c2:
-        # FANCY ANIMATION
-        if anim_radar: st_lottie(anim_radar, height=120, key="radar")
-
-    # HUD METRICS
-    m1, m2, m3, m4 = st.columns(4)
-    m1.metric("ACTIVE UNITS", "4", "Deployed")
-    m2.metric("DAILY SCANS", "142", "+12%")
-    m3.metric("THREAT LEVEL", "LOW", "Stable")
-    m4.metric("SERVER PING", "14ms", "Optimal")
-    
-    st.markdown("### 📡 LIVE TRAFFIC ANALYTICS")
-    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["Inbound", "Outbound", "Flagged"])
-    st.area_chart(chart_data)
-
-# === FIELD SCANNER (THE REAL LOGIC) ===
-elif menu == "Field Scanner":
-    st.title("📹 FIELD SCANNER")
-    st.caption("DEPLOYED NEURAL NETWORK: YOLOv8 CUSTOM")
-    
-    col_cam, col_res = st.columns([1, 1])
-    
-    with col_cam:
-        st.markdown("#### 1. ACQUIRE TARGET")
-        # CAMERA INPUT
-        img_file = st.camera_input("Activate Optical Sensor")
-    
-    with col_res:
-        st.markdown("#### 2. ANALYSIS RESULT")
-        
-        if img_file is not None:
-            # SAVE FILE
-            real_path = save_temp_file(img_file)
+        st.markdown("<br><br>", unsafe_allow_html=True)
+        # Create a container that looks like your "SoftGlassCard"
+        with st.container():
+            st.title("🛡️ CarGuard AI")
+            st.caption("ULTIMATE EDITION")
             
-            # SHOW ANIMATION WHILE PROCESSING
-            with st.status("🚀 Initializing Neural Network...", expanded=True) as status:
-                st.write("Image captured...")
-                time.sleep(0.5)
-                st.write("Running YOLO Inference...")
-                
-                # --- CALL YOUR REAL FUNCTION HERE ---
-                try:
-                    # Assumes returns [plate_string, path_to_image]
-                    result = yoloDetectPhoto(real_path) 
-                    
-                    if isinstance(result, (list, tuple)):
-                        plate_text = result[0]
-                        res_path = result[1]
-                        
-                        status.update(label="Analysis Complete", state="complete", expanded=False)
-                        
-                        # SHOW RESULT CARD
-                        st.success("✅ LICENSE PLATE IDENTIFIED")
-                        st.metric("DETECTED SEQUENCE", plate_text, "Confidence: 96.5%")
-                        
-                        # SHOW PROCESSED IMAGE
-                        if os.path.exists(res_path):
-                            st.image(res_path, caption="Computer Vision Output", width=400)
-                        else:
-                            st.image(real_path, caption="Raw Capture (Model output missing)")
-                            
-                        # UPLOAD BUTTON
-                        if st.button("UPLOAD EVIDENCE TO CLOUD"):
-                            if DB_STATUS:
-                                db.child("logs").push({
-                                    "timestamp": str(datetime.now()),
-                                    "plate": plate_text,
-                                    "action": "Live-YOLO",
-                                    "officer": "Commander"
-                                })
-                                st.balloons()
-                                st.toast("Evidence Archived Securely!", icon="☁️")
+            tab1, tab2 = st.tabs(["LOGIN", "REGISTER"])
+            
+            with tab1:
+                u = st.text_input("Username", placeholder="Enter Username")
+                p = st.text_input("Password", type="password", placeholder="Enter Password")
+                if st.button("LOGIN", use_container_width=True):
+                    success, role = AuthSystem.login(u, p)
+                    if success:
+                        st.session_state.logged_in = True
+                        st.session_state.user = u
+                        st.session_state.role = role
+                        st.rerun()
                     else:
-                        st.error(f"Unexpected Output: {result}")
-                        
-                except Exception as e:
-                    st.error(f"Inference Error: {e}")
-                    st.warning("Check if your yoloPhoto.py uses cv2.imshow (Delete it!)")
+                        st.error(role)
+            
+            with tab2:
+                new_u = st.text_input("New User")
+                new_p = st.text_input("New Pass", type="password")
+                new_e = st.text_input("Email")
+                new_pl = st.text_input("Car Plate")
+                if st.button("CREATE ACCOUNT", use_container_width=True):
+                    s, m = AuthSystem.register(new_u, new_p, new_e, new_pl)
+                    if s: st.success("Registered! Login now.")
+                    else: st.error(m)
 
-        else:
-            # SHOW WAITING ANIMATION
-            st.info("Waiting for video feed input...")
-            if anim_scan: st_lottie(anim_scan, height=200, key="scan")
+# === MAIN APP ===
+else:
+    with st.sidebar:
+        st.title(f"Hi, {st.session_state.user}")
+        st.caption(f"Role: {st.session_state.role}")
+        st.markdown("---")
+        # Exact icons from your main.py intent
+        menu = st.radio("NAVIGATION", ["Dashboard", "Live Scan", "Image Upload", "History", "Feedback", "Profile"])
+        st.markdown("---")
+        if st.button("LOGOUT"):
+            st.session_state.logged_in = False
+            st.rerun()
 
-# === EVIDENCE ARCHIVE ===
-elif menu == "Evidence Archive":
-    st.title("📂 EVIDENCE ARCHIVE")
-    
-    if DB_STATUS:
-        logs = db.child("logs").get().val()
-        if logs:
-            data = [{"Time": v.get('timestamp'), "Plate": v.get('plate'), "Officer": v.get('officer', 'Unknown')} for k, v in logs.items()]
-            df = pd.DataFrame(data)
-            st.dataframe(df, use_container_width=True)
+    # --- DASHBOARD ---
+    if menu == "Dashboard":
+        st.header("📊 Mission Control")
+        
+        # SoftGlassCard Mimicry
+        c1, c2, c3 = st.columns(3)
+        c1.metric("System Status", "ONLINE", "Stable")
+        c2.metric("Active Units", "4", "+1")
+        c3.metric("Total Scans", "1,240", "+12")
+        
+        # Grid Layout like your desktop app
+        st.markdown("### Quick Actions")
+        g1, g2, g3 = st.columns(3)
+        if g1.button("📹 LIVE SCAN", use_container_width=True): st.info("Use Sidebar -> Live Scan")
+        if g2.button("🖼️ UPLOAD", use_container_width=True): st.info("Use Sidebar -> Image Upload")
+        if g3.button("📜 HISTORY", use_container_width=True): st.info("Use Sidebar -> History")
+
+    # --- LIVE SCAN (The Bridge Method) ---
+    elif menu == "Live Scan":
+        st.header("📹 Live Feed")
+        
+        img_buffer = st.camera_input("Scanner")
+        
+        if img_buffer:
+            # 1. SAVE TO DISK (Bridge)
+            if not os.path.exists("temp"): os.makedirs("temp")
+            path = os.path.join("temp", "scan.jpg")
+            with open(path, "wb") as f: f.write(img_buffer.getbuffer())
+            
+            # 2. RUN YOLO
+            try:
+                result = yoloDetectPhoto(path)
+                if isinstance(result, (list, tuple)):
+                    plate = result[0]
+                    res_path = result[1]
+                    
+                    c1, c2 = st.columns(2)
+                    c1.success(f"DETECTED: {plate}")
+                    if os.path.exists(res_path):
+                        c2.image(res_path, caption="AI Analysis")
+                    
+                    # LOG
+                    if DB_STATUS:
+                        db.child("logs").push({
+                            "timestamp": str(datetime.now()),
+                            "user": st.session_state.user,
+                            "plate": plate,
+                            "type": "Live"
+                        })
+            except Exception as e:
+                st.error(f"Error: {e}")
+
+    # --- IMAGE UPLOAD ---
+    elif menu == "Image Upload":
+        st.header("🖼️ Manual Upload")
+        
+        file = st.file_uploader("Select Image", type=['jpg', 'png'])
+        if file:
+            # Save
+            if not os.path.exists("temp"): os.makedirs("temp")
+            path = os.path.join("temp", file.name)
+            with open(path, "wb") as f: f.write(file.getbuffer())
+            
+            st.image(path, width=300)
+            
+            if st.button("RUN DETECTION"):
+                result = yoloDetectPhoto(path)
+                if isinstance(result, (list, tuple)):
+                    st.success(f"Plate: {result[0]}")
+                    if os.path.exists(result[1]): st.image(result[1])
+
+    # --- HISTORY ---
+    elif menu == "History":
+        st.header("📜 Logs")
+        if DB_STATUS:
+            logs = db.child("logs").get().val()
+            if logs:
+                # Filter Logic
+                data = []
+                for k, v in logs.items():
+                    # Admin sees all, User sees own
+                    if st.session_state.role == 'admin' or v.get('user') == st.session_state.user:
+                        data.append(v)
+                st.dataframe(data, use_container_width=True)
+            else:
+                st.info("No logs.")
         else:
-            st.info("Database Empty.")
-    else:
-        st.error("Database Disconnected.")
+            st.error("DB Offline")
+
+    # --- FEEDBACK ---
+    elif menu == "Feedback":
+        st.header("💬 Feedback")
+        with st.form("fb"):
+            txt = st.text_area("Your feedback")
+            rate = st.slider("Rating", 1, 5, 5)
+            if st.form_submit_button("SEND"):
+                if DB_STATUS:
+                    db.child("feedback").push({"user": st.session_state.user, "msg": txt, "rate": rate})
+                    st.success("Sent!")
+
+    # --- PROFILE ---
+    elif menu == "Profile":
+        st.header("👤 Profile")
+        if DB_STATUS:
+            users = db.child("users").get().val()
+            my_data = None
+            my_uid = None
+            if users:
+                for uid, u in users.items():
+                    if u.get("username") == st.session_state.user:
+                        my_data = u
+                        my_uid = uid
+                        break
+            
+            if my_data:
+                with st.form("prof"):
+                    e = st.text_input("Email", my_data.get("email"))
+                    p = st.text_input("Plate", my_data.get("car_plate"))
+                    if st.form_submit_button("UPDATE"):
+                        db.child("users").child(my_uid).update({"email": e, "car_plate": p})
+                        st.success("Updated!")
